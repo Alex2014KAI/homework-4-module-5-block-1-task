@@ -4,10 +4,10 @@ class Figure {
 protected:
     std::string _name;
     int _numberSides;
-    int getNumberSides();
-    std::string getName();
 public:
     Figure() : _name("Фигура"), _numberSides(0){};
+    int getNumberSides();
+    std::string getName();
     void printData();
 };
 
@@ -52,5 +52,5 @@ std::string Figure::getName() {
 };
 
 void Figure::printData() {
-    std::cout << _name << ": " << _numberSides << std::endl;
+    std::cout << getName() << ": " << getNumberSides() << std::endl;
 }
